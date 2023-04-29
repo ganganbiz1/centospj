@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  app:
+    build:
+      dockerfile: Dockerfile
+    tty: true
+    container_name: centos6.5
+    volumes:
+      - ./:/app
+    ports:
+      - "80:80"
